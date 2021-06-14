@@ -1,0 +1,11 @@
+@use "../../../scss/abstract/variables" as var;
+
+.btn {
+  color: var.$whiteFontColor;
+  &--default {
+    background-color: var.$mainColor;
+  }
+  &--secondary {
+    background-color: var.$secondaryColor;
+  }
+}

@@ -1,5 +1,9 @@
 import {combineReducers} from "redux";
+import {headerReducer, footerReducer} from "./headerFooterReducer";
+import {registrationReducer} from "./authReducer";
 
 export default combineReducers({
-    dummy: () => 123,
+    headerHeight: headerReducer,
+    footerHeight: footerReducer,
+    registrationStatus: registrationReducer
 });

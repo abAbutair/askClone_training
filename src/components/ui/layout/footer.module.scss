@@ -1,0 +1,13 @@
+@use "../../../scss/abstract/variables" as var;
+
+.footer {
+  padding: 1rem 0;
+  background-color: var.$secondaryColor;
+  display: flex;
+  justify-content: center;
+}
+
+.copyrights {
+  color: var.$whiteFontColor;
+  font-size: var.$smallFontSize;
+}

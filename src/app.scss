@@ -1,0 +1,19 @@
+@use "scss/abstract/fonts";
+@use "./scss/base/reset";
+
+.centered-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width {
+  > * {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "../../../scss/abstract/variables" as var;
+
+.header {
+  padding: 1.5rem 0;
+  background-color: var.$mainColor;
+
+  &__before {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__after {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  span {
+    color: var.$whiteFontColor;
+    font-size: var.$logoFontSize;
+  }
+}

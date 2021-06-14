@@ -1,3 +1,5 @@
+@use "../abstract/variables" as var;
+
 *,
 *::after,
 *::before {
@@ -9,6 +11,11 @@
   //direction: $isRtl;
 }
 
-body {box-sizing: border-box;}
+//html {font-size: 62.5%;}
+
+body {
+  box-sizing: border-box;
+  background-color: var.$bodyColor;
+}
 
 html, body {height: 100%}
