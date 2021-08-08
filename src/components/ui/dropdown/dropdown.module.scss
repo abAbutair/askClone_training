@@ -1,0 +1,23 @@
+@use "../../../assets/scss/abstract/variables" as var;
+
+.dropdown {
+  background-color: transparent;
+  border: none;
+  &__btn {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &-menu {
+    left: auto;
+    right: 0;
+    border: 0.1rem solid var.$mainColor;
+    padding: 10px 5px;
+    li {
+
+    }
+    &.hide {
+      display: none;
+    }
+  }
+}

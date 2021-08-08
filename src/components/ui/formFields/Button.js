@@ -1,9 +1,9 @@
 import React from "react";
 import styles from './button.module.scss';
 
-const Button = ({buttonContent, type}) => {
+const Button = ({children, type, onClick}) => {
     return (
-        <button className={`btn ${styles.btn} ${styles['btn--default']}`} type={type}>{buttonContent}</button>
+        <button className={`btn ${styles.btn} ${styles[`btn--default`]}`} type={type} onClick={onClick}>{children}</button>
     );
 };
 

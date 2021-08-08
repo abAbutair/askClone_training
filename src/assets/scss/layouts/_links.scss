@@ -1,0 +1,11 @@
+@use "../abstract/variables" as var;
+
+.link {
+  text-decoration: none;
+  &--default {
+    color: var.$bodyColor;
+    &:hover {
+      color: darken(var.$bodyColor, 20%);
+    }
+  }
+}

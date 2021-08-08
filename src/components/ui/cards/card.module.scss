@@ -1,17 +1,18 @@
-@use "../../../scss/abstract/variables" as var;
+@use "../../../assets/scss/abstract/variables" as var;
 
 .card {
   padding: 2rem;
-  border: 0.1rem solid transparent;
+  border: 1px solid transparent;
   border-radius: 0.3rem;
-
-  > * {
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 1rem !important;
   }
 
   &--bordered {
-    border: 0.1rem solid var.$mainColor;
+    border: 1px solid var.$mainColor;
+  }
+
+  &--background {
+    background-color: rgba(var.$grey, 0.3);
   }
 }

@@ -5,7 +5,7 @@ import styles from "./main.module.scss";
 
 const Main = (props) => {
     return (
-        <main className={styles.main} style={{"height": `calc(100vh - (${props.headerHeight}px + ${props.footerHeight}px))`}}>
+        <main className={styles.main} style={{minHeight: `calc(100vh - (${props.headerHeight}px + ${props.footerHeight}px))`}}>
             {props.mainChildren}
         </main>
     );

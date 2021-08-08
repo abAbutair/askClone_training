@@ -1,5 +1,6 @@
-@use "scss/abstract/fonts";
-@use "./scss/base/reset";
+@use "./assets/scss/abstract/fonts";
+@use "./assets/scss/base/reset";
+@use "assets/scss/abstract/variables" as var;
 
 .centered-block {
   width: 100%;
@@ -16,4 +17,18 @@
       margin-bottom: 1rem;
     }
   }
+}
+
+.img-holder {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.dark-mode {
+  background-color: var.$darkMode;
+  color: var.$lightMode;
 }

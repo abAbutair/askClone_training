@@ -1,7 +1,7 @@
-@use "../../../scss/abstract/variables" as var;
+@use "../../../assets/scss/abstract/variables" as var;
 
 .header {
-  padding: 1.5rem 0;
+  padding: .5rem 0;
   background-color: var.$mainColor;
 
   &__before {
@@ -12,11 +12,36 @@
   &__after {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &__item {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__profile {
+    span {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+    }
+  }
+  &__font {
+    i {
+      color: var.$bodyColor;
+      font-size: var.$logoFontSize;
+    }
   }
 }
 
 .logo {
-  span {
+  a {
     color: var.$whiteFontColor;
     font-size: var.$logoFontSize;
   }

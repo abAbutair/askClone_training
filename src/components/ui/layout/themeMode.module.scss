@@ -1,0 +1,13 @@
+@use "../../../assets/scss/abstract/variables" as var;
+.theme-mode {
+  background-color: transparent;
+  border: none;
+
+  &-light {
+    color: var.$lightMode;
+  }
+
+  &-dark {
+    color: var.$darkMode;
+  }
+}

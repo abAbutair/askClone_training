@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import {connect} from "react-redux";
-import {footerHeight} from "../../../actions";
+import {footerHeight} from "../../../store/actions";
 
 import styles from "./footer.module.scss";
 

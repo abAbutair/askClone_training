@@ -1,3 +1,0 @@
-export const HEADER_HEIGHT = "HEADER_HEIGHT";
-export const FOOTER_HEIGHT =  "FOOTER_HEIGHT";
-export const REGISTRATION =  "REGISTRATION";

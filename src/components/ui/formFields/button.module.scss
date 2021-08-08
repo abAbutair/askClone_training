@@ -1,11 +1,36 @@
-@use "../../../scss/abstract/variables" as var;
+@use "../../../assets/scss/abstract/variables" as var;
 
 .btn {
-  color: var.$whiteFontColor;
+  padding: 10px 15px;
+  background-color: transparent;
+  text-transform: capitalize;
+
   &--default {
-    background-color: var.$mainColor;
+    color: var.$mainColor;
+    border: 1px solid var.$mainColor;
+
+    &:hover {
+      color: darken(var.$mainColor, 20%);
+    }
   }
+
   &--secondary {
-    background-color: var.$secondaryColor;
+    color: var.$secondaryColor;
+    border: 1px solid var.$secondaryColor;
+
+    &:hover {
+      color: darken(var.$secondaryColor, 20%);
+    }
+  }
+}
+
+.reaction-btn {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  &--like {
+    color: #0063B1;
   }
 }
